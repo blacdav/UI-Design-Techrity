@@ -1,0 +1,159 @@
+:root {
+    --primary: hsl(300, 43%, 22%);
+    --secondary: hsl(333, 80%, 67%);
+}
+
+body {
+    width: 95vw;
+    margin: .5rem;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    display: grid;
+    justify-content: center;
+}
+
+.head * {
+    text-align: center;
+    color: var(--primary);
+}
+
+.head h1 {
+    font-weight: 900;
+    line-height: 2rem;
+    font-size: xx-large;
+    display: flex;
+    color: var(--primary);
+}
+
+.img {
+    display: flex;
+    margin: .1rem 0 0 0 ;
+}
+
+.img img {
+    width: 1rem;
+    margin: .5rem;
+}
+
+.rate {
+    display: grid;
+    justify-content: center;
+    width: 90vw;
+    font-weight: bold;
+    margin: .5rem auto;
+    padding: .2rem;
+    border-radius: .3rem;
+    background-color: var(--secondary);
+}
+
+.rate p {
+    margin: 0 0 .1rem 0;
+    color: var(--primary);
+}
+
+
+.part2 {
+    color: white;
+    margin-top: 2rem;
+}
+
+.part2 img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+}
+
+.card {
+    background-color: var(--primary);
+    border-radius: .5rem;
+    padding: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.profile h1 {
+    margin: 0;
+    font-size: small;
+}
+
+.profile p {
+    margin: 0;
+    font-size: small;
+    color: var(--secondary);
+}
+
+@media (min-width: 1024px) {
+/* @media (min-width: 1440px) { */
+    body {
+        width: 80vw;
+        margin: auto;
+    }
+
+    .part1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 5rem;
+    }
+
+    .head {
+        width: 50vw;
+    }
+
+    .part1 .head * {
+        text-align: left;
+    }
+
+    .part1 .head h1 {
+        width: 20vw;
+        /* font-size: 5rem; */
+    }
+
+    .part1 .head p {
+        width: 30vw;
+    }
+
+    aside {
+        margin-top: 1.5rem;
+    }
+
+    .rate {
+        display: flex;
+        align-items: baseline;
+        gap: 1rem;
+        width: 30vw;
+        padding: .5rem;
+    }
+
+    .a {
+        margin-left: -6rem;
+    }
+
+    .b {
+        margin-left: -3rem;
+    }
+
+    .part2 {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 4rem;
+    }
+
+    .card {
+        height: 25vh;
+        width: 23vw;
+    }
+
+    .s {
+        margin-top: 1rem;
+    }
+
+    .t {
+        margin-top: 2rem;
+    }
+}
